@@ -1,37 +1,37 @@
 title: Hello World
 ---
-Welcome to [Hexo](http://hexo.io/)! This is your very first post. Check [documentation](http://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](http://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+欢迎使用 [Hexo](http://hexo.io/)! 这是第一篇文章.查阅 [documentation](http://hexo.io/docs/) 获取更多信息. 有问题请到 [troubleshooting](http://hexo.io/docs/troubleshooting.html) 或者问我 [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+## 快速开始
 
-### Create a new post
+### 新文章
 
 ``` bash
 $ hexo new "My New Post"
 ```
 
-More info: [Writing](http://hexo.io/docs/writing.html)
+更多信息: [编写](http://hexo.io/docs/writing.html)
 
-### Run server
+### 运行服务端
 
 ``` bash
 $ hexo server
 ```
 
-More info: [Server](http://hexo.io/docs/server.html)
+更多信息: [服务端](http://hexo.io/docs/server.html)
 
-### Generate static files
+### 生成静态文件
 
 ``` bash
 $ hexo generate
 ```
 
-More info: [Generating](http://hexo.io/docs/generating.html)
+更多信息: [生成](http://hexo.io/docs/generating.html)
 
-### Deploy to remote sites
+### 发布站点
 
 ``` bash
 $ hexo deploy
 ```
 
-More info: [Deployment](http://hexo.io/docs/deployment.html)
+更多信息: [发布](http://hexo.io/docs/deployment.html)
