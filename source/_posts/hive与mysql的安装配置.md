@@ -4,12 +4,12 @@ tags:
 categories: []
 date: 2015-01-22 17:00:00
 ---
-## hive的安装和配置 
+## hive的安装和配置
 >java版本：jdk1.7
   hadoop版本：2.6.0
   Hive版本：0.9.0
 
-
+<!--more-->
 ### 下载Hive
 下载地址 http://mirrors.cnnic.cn/apache/hive/stable/  
 我下载的是0.14稳定版，下载mysql JDBC驱动配置mysql要用到
@@ -18,7 +18,7 @@ date: 2015-01-22 17:00:00
 ```
 mv hive-0.14.0.tar.gz /home/hadoop/
 cd /home/hadoop/
-tar -zxvf hive-0.14.0.tar.gz 
+tar -zxvf hive-0.14.0.tar.gz
 ```
 ### 用root用户给hive-0.9.0授权
 ```
@@ -79,7 +79,7 @@ ls -l
 <value>/home/yuhaitao/hive/operation_logs</value>
 </property>
 <!--该参数是设置HDFS中保存数据仓库的目录-->
-<property> 
+<property>
 <name>hive.metastore.warehouse.dir</name>
 <value>/user/hive/warehouse</value>
 </property>
@@ -88,22 +88,22 @@ ls -l
 <name>hive.metastore.local</name>
 <value>true</value>
 </property>
- <property> 
-   <name>javax.jdo.option.ConnectionURL </name> 
-   <value>jdbc:mysql://localhost:3306/hive?createDatabaseIfNotExist=true</value> 
-</property> 
-<property> 
-   <name>javax.jdo.option.ConnectionDriverName </name> 
-   <value>com.mysql.jdbc.Driver</value> 
+ <property>
+   <name>javax.jdo.option.ConnectionURL </name>
+   <value>jdbc:mysql://localhost:3306/hive?createDatabaseIfNotExist=true</value>
+</property>
+<property>
+   <name>javax.jdo.option.ConnectionDriverName </name>
+   <value>com.mysql.jdbc.Driver</value>
 </property>
 <property>
 <name>javax.jdo.option.ConnectionUserName</name>
 <value>root</value>
 </property>
-<property> 
-   <name>javax.jdo.option.ConnectionPassword</name> 
-   <value>123456</value> 
-</property> 
+<property>
+   <name>javax.jdo.option.ConnectionPassword</name>
+   <value>123456</value>
+</property>
 </configuration>
 ```
 ### 把MySQL的JDBC驱动包复制到Hive的lib目录下。
@@ -126,7 +126,7 @@ SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 ```bash
 jar cvfM0 hive-hwi-0.14.0.war -C web/ .
 ```
-执行之后 ，将生成的war文件拷贝至$HIVE_HOME/lib文件夹下，同时修改hive-site.xml文件夹中的：  hive.hwi.war.file，将其value改为lib/hive-hwi-0.14.0.war 
+执行之后 ，将生成的war文件拷贝至$HIVE_HOME/lib文件夹下，同时修改hive-site.xml文件夹中的：  hive.hwi.war.file，将其value改为lib/hive-hwi-0.14.0.war
 
 <property>
                  <name>hive.hwi.war.file</name>
@@ -143,9 +143,9 @@ com.sun.tools.javac.Main is not on the classpath.
 Perhaps JAVA_HOME does not point to the JDK.
 It is currently set to "/usr/lib/jdk/jre"
 
-解决方法： 
+解决方法：
 ```
-cp $JAVA_HOME/lib/tools.jar $HIVE_HOME/lib/ 
+cp $JAVA_HOME/lib/tools.jar $HIVE_HOME/lib/
 ```
 
 ### Hive的数据类型
@@ -162,7 +162,7 @@ cp $JAVA_HOME/lib/tools.jar $HIVE_HOME/lib/
 ### Hive常规操作
 ```bash
 # 创建一个 test  数据库
-hive > create  database  test ; 
+hive > create  database  test ;
 # 使用  test  数据库
 hive > use  test ;                                   
 hive > create  table score(name  string , score  int);     
@@ -170,7 +170,7 @@ hive > create  table score(name  string , score  int);
 #COLLECTION ITEMS TERMINATED BY ','     这句话表示这个字段是一个数组，用  ',' 分割元素对象
 hive > create table person(name string,age int)row format delimited fields terminated by '\t' escaped by '\\' stored as textfile;
 #加载score1.txt文件中的数据到表 score 中
-hive > load  data  local  inpath  ' fileshare/score1.txt '  into  table  score; 
+hive > load  data  local  inpath  ' fileshare/score1.txt '  into  table  score;
 #查询显示表中的数据
 hive > select  *  from score;          
 #这个计算过程，Hive会自动转换成MapReduce任务执行，

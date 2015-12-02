@@ -16,7 +16,7 @@ ubuntu安装git直接apt-get就可以了
 ```
 $ sudo apt-get install git-core
 ```
-
+<!--more-->
 ## 安装Node.js
 
 hexo官方推荐的安装方法是使用nvm，这里我们也使用nvm进行安装，当然你也可以使用直接安装，不过貌似nvm安装之后会直接在个人目录下产生.nvm目录并且通过.bashrc或者.bash_profile进行开机加载，然后其他的nvm操作都会保存在>.nvm目录，这样方便以后升级或者重装系统，相当于绿色软件了。

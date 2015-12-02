@@ -17,14 +17,16 @@ geeknote的官网，我们可以看到一些介绍，安装的步骤还是随大
     Evernote用户：git clone git://github.com/VitaliyRodnenko/geeknote.git
 ```
 这是第一步,这一步很关键的，如果你是印象笔记用户，却下载的Evernote版本的话，那么就用不了。BTW，你的网还要好一点，不然在安装过程中，会有些下载不下来。好比我用的校网死活下不下来，但是chinanet给了我希望^_^.
+<!--more-->
+其他的安装部分如下：
 
-其他的安装部分如下： 
 ```
 sudo python setup.py install
 ```
 安装好了后，我们需要将geeknote和印象笔记相互连接，授权一下，我们使用geeknote login然后输入用户名和密码，但是还会出现一个Code当时我没有反应过来这是啥？直接回车了。后来发现这个没啥事儿。我搜了很久也没发觉这个是啥。如果你恰好知道的话，希望你能告诉我，先谢谢拉～
 
 当我们授权完成后会有提示successfully那么我们可以查看下是否是真的授权成功了geeknote settings 会出现如下内容：
+
 ```
 Geeknote
 ******************************
@@ -51,7 +53,7 @@ geeknote create --title "xxx" --notebook "xxxx" --content "WRITE"  --tags "xx,xx
 
 2.修改笔记
 ```
-geeknote edit --note "xxx" --content "WRITE" 
+geeknote edit --note "xxx" --content "WRITE"
 ```
 上面这是最简单的修改了，就是修改下内容而已。如果你想去修改笔记的标题，所处笔记本，以及标签的话使用如下：
 ```
@@ -83,7 +85,7 @@ geeknote show <text to search and show>
 简单说两个例子：
 ```
 geeknote show "geeknote"   如果笔记同名的比较多会有选项让你选择
-geeknote find --search "geeknote" 
+geeknote find --search "geeknote"
 geeknote show 2    这是两步操作，显示上面查找的第二个文件
 ```
 一般来说，如果文件内容比较多的话，使用less来查看还是不错的选择。
@@ -92,7 +94,7 @@ geeknote show 2    这是两步操作，显示上面查找的第二个文件
 
 删除笔记还是比较简单的，简单干脆
 ```
-geeknote remove --note "xxxx" 
+geeknote remove --note "xxxx"
 ```
 笔记本
 

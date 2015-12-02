@@ -4,7 +4,7 @@ tags:
 categories: []
 date: 2015-01-21 18:50:00
 ---
-```java
+``` java
 12/08/27 15:49:40 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 12/08/27 15:49:40 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
 12/08/27 15:49:41 INFO input.FileInputFormat: Total input paths to process : 4

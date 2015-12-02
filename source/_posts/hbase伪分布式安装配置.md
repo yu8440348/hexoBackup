@@ -20,6 +20,7 @@ export HBASE_CLASSPATH=/home/yuhaitao/hadoop/etc/hadoop/
 # The maximum amount of heap to use, in MB. Default is 1000.
 export HBASE_HEAPSIZE=1000
 ```
+<!--more-->
 ### 配置hbase-site.xml
 ```xml
 <configuration>
@@ -47,7 +48,7 @@ export HBASE_HEAPSIZE=1000
 </configuration>
 ```
 ### 启动hbase
-- 先启动 hadoop ，然后启动habse 
+- 先启动 hadoop ，然后启动habse
 ```
 ~/hadoop/sbin$ ./start-all.sh
 ~/hadoop/hbase-hadoop2/bin$ ./start-hbase.sh

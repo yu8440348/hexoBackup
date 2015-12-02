@@ -11,6 +11,7 @@ date: 2015-01-29 15:51:00
     # cp -r usr /
     # cp -r opt /
 ```
+<!--more-->
 - 安装库文件
 ```
     # yum install libqxt

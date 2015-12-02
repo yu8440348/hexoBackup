@@ -6,22 +6,23 @@ date: 2015-01-07 13:38:00
 ---
 ## 安装MyEclipse
 示例路径：下载/myeclipse.run
- 
+
 示例文件名：myeclipse.run
 - ctrl+alt+t打开终端，切换到myeclipse所在路径
-- 设置myeclipse.run的执行权限，使之可以安装： 
+- 设置myeclipse.run的执行权限，使之可以安装：
 ```bash
 	sudo chmod +x myeclipse.run   
 ```
 - 运行myeclipse安装向导（执行安装向导之前不要忘了先JDK，JDK1.7安装教程http://www.linuxidc.com/Linux/2012-11/74189.htm）：  
-```bash
+``` bash
 sudo sh myeclipse.run
 ```
+<!--more-->
 - OK，进入图像界面安装myeclipse,(选择安装路径，选择系统，我这里64位的),
 
 ## 建立快捷方式,正常启动程序
 - 在执行myeclipse之前，我们要给它赋上root权限：
-```bash
+``` bash
 cd /usr/app
 sudo chown -R root:root MyEclipse
 sudo chmod -R +r MyEclipse
@@ -37,9 +38,9 @@ sudo vim /usr/bin/MyEclipse
 ```bash
 sudo chmod 755 -R /usr/bin/MyEclipse
 ```
-- 在Dash 面板添加MyEclipse 10快捷方式 
+- 在Dash 面板添加MyEclipse 10快捷方式
 ```
-sudo gedit /usr/share/applications/MyEclipse.desktop 
+sudo gedit /usr/share/applications/MyEclipse.desktop
 ```
 执行命令后自动打开编辑器，写入如下内容目录改成自己的，引号为英文状态下的，Icon可以任意更换
 ```bash

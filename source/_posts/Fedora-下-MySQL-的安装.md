@@ -12,7 +12,8 @@ yum -y install community-mysql-server
 ```
 
 ### 配置数据库
-```bash
+
+``` bash
 #启动服务
 systemctl start mysqld.service
 systemctl enable mysqld.service

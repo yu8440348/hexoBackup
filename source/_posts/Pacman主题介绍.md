@@ -15,7 +15,7 @@ Pacman是一款为Hexo打造的一款扁平化，有着响应式设计的主题�
 $ git clone https://github.com/A-limon/pacman.git themes/pacman
 ```
 Pacman需要安装Hexo 2.4.5 或以上版本 请先升级您的Hexo程序，再启用此主题。
-
+<!--more-->
 ### 启用
 
 修改你的博客根目录下的config.yml配置文件中的theme属性，将其设置为pacman。同时请设置stylus属性中的compress值为true。
@@ -35,28 +35,28 @@ Pacman主题提供了丰富的配置属性，配置文件_config.yml位于主题
 ##### Menu
 menu:
   Home: /
-  Archives: /archives 
+  Archives: /archives
 
 #### Widgets
-widgets: 
+widgets:
 - category
 - tag
 - rss
 
 #### RSS
-rss: 
+rss:
 
 #### Image
 imglogo:
   enable: true
-  src: /img/logo.svg 
-  favicon: /img/favicon.ico 
+  src: /img/logo.svg
+  favicon: /img/favicon.ico
   apple_icon: /img/pacman.jpg
 
 #### Author Avatar Picture
 author_img_enable: true
 dataURI: false
-author_img_data: 
+author_img_data:
 author_img: /img/author.jpg
 
 #### Font
@@ -64,32 +64,32 @@ ShowCustomFont: true
 
 #### Toc
 toc:
-  article: true 
-  aside: true 
+  article: true
+  aside: true
 
 #### Fancybox
-fancybox: true 
+fancybox: true
 
 #### Author information
 author:
-  google_plus: 
-  intro_line1: 
-  intro_line2: 
-  weibo: 
-  twitter: 
-  github: 
-  facebook: 
-  tsina: 
-  
+  google_plus:
+  intro_line1:
+  intro_line2:
+  weibo:
+  twitter:
+  github:
+  facebook:
+  tsina:
+
 #### Comment
-duoshuo: 
+duoshuo:
   enable: false        
-  short_name: 
+  short_name:
 
 #### Share button
 jiathis:
   enable: false  
-  id: 
+  id:
   tsina:
 
 #### Analytics
@@ -99,7 +99,7 @@ google_analytics:
   site:
 
 #### Custom Search
-google_cse: 
+google_cse:
   enable: false
   cx:
 ```

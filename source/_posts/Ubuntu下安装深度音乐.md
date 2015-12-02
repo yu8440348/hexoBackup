@@ -12,11 +12,11 @@ sudo apt-get install deepin-music-player
 ```
 **然后我们先打开一下深度音乐，这样它会创建好文件夹方便安装百度音乐插件**  
 接着：  
-
+<!--more-->
 1.安装编译时的相关依赖包(cython libwebkitgtk-dev python-dev git),  
 
     sudo apt-get install cython libwebkitgtk-dev git
-    
+
 2.安装pyjavascriptcore
 ```bash
 　　git clone https://github.com/sumary/pyjavascriptcore.git

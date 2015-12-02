@@ -12,7 +12,7 @@ date: 2015-01-07 15:08:00
 `sudo su`  
 - 转到根目录：
 `cd /`
-
+<!--more-->
 - 然後，下面就是我用来备份我的系统的完整的命令：
 ```
 tar -cvpzf /media/yuhaitao/文档1/backup.tgz --exclude=/proc --exclude=/lost+found --exclude=/mnt --exclude=/sys --exclude=/media --exclude=/home/yuhaitao --exclude=/boot /
@@ -51,7 +51,7 @@ tar -cvpzf /media/yuhaitao/文档1/backup.tgz --exclude=/proc --exclude=/lost+fo
 
 6,备份 `tar -cvpzf /media/xxx/backup.tgz *`
 
- 
+
 
 然后就是将来还原Ubuntu系统备份了：
 

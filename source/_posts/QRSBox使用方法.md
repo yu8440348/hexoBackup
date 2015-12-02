@@ -11,7 +11,7 @@ date: 2015-01-07 22:03:00
 首先，下载 QRSBox 命令行工具，并解压。
 
 然后，在解压后的文件夹中执行以下命令，进行初始化：
-
+<!--more-->
     ./qrsboxcli init <AccessKey> <SecretKey> <SyncDir> <Bucket> [<KeyPrefix>]
 其中，**AccessKey**和 **SecretKey**在七牛云存储平台上申请。步骤如下：
 

@@ -8,12 +8,12 @@ date: 2015-01-14 16:45:00
 ## 环境
 - 系统： Ubuntu 14.04 64bit
 - Hadoop版本： Hadoop 2.6.0 (stable)
-- JDK版本： sun jdk7 
+- JDK版本： sun jdk7
 
 ## 安装SSH server、配置SSH无密码登陆
 ### 安装 ssh 和 rsync
 > ssh 是一个很著名的安全外壳协议 Secure Shell Protocol。 rsync 是文件同步命令行工具
-
+<!--more-->
 ```
 sudo apt-get install ssh rsync
 ```  

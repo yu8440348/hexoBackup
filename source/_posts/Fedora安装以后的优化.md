@@ -16,6 +16,8 @@ sudo yum install gnome-tweak-tool
 
 对于国内用户，肯定不习惯多个桌面的形式，打开“优化工具”，在左侧选择“Workspaces”，把右侧的“Workspaces Creation”设置为“Static”，下面的“Number of Workspaces”设置为1，这样就只有1个桌面了。
 
+<!--more-->
+
 #### 2.设置网易软件源设置最快软件源
 把yum-plugin-fastestmirror插件装上就行了，没有必要安装网易的源。
 ```
@@ -51,8 +53,8 @@ sudo yum install gnome-shell-theme-zukitwo  #为系统安装zukitwo透明主题
 #### 4.安装五笔输入法（ibus）
 ```
 [bear@bogon ~]$ sudo yum list | grep wubi
-ibus-table-chinese-wubi-haifeng.noarch  1.4.6-2.fc19                     fedora 
-ibus-table-chinese-wubi-jidian.noarch   1.4.6-2.fc19                     fedora 
+ibus-table-chinese-wubi-haifeng.noarch  1.4.6-2.fc19                     fedora
+ibus-table-chinese-wubi-jidian.noarch   1.4.6-2.fc19                     fedora
 [bear@bogon ~]$ sudo yum install ibus-table-chinese-wubi-haifeng
 ```
 然后需要重启一下（不知道为什么需要重启），添加一个输入源。打开“设置”－“区域和语言”，点击“输入源”下面的加号，选择“汉语（中国）”，列表里会出现“汉语（海峰五笔86）”，然后点“添加”就可以了。

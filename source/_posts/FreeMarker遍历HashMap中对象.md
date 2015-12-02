@@ -6,7 +6,7 @@ date: 2015-01-09 15:25:00
 ---
 #### 在jfinal中使用FreeMarker遍历HashMap中对象
 java代码如下
-```java
+``` java
 HashMap<String, FileModel> hashmap = new  HashMap<String,FileModel>();  
 FileModel model = new FileModel();
 model.setKey(item.key);

@@ -9,9 +9,9 @@ date: 2015-01-16 15:09:00
 > 1.hdfs安全模式需要关闭 命令：./hadoop dfsadmin -safemode leave  
 > 2.引用jar包，需要将hadoop/share/hadoop/common/lib写的jar包都引用，并且还要引用hdfs目录下的hadoop-hdfs-2.6.0.jar  
 > 3.hadoop集群用户权限的问题，以及各个目录的作用
-
+<!--more-->
 #### 代码如下
-```java
+``` java
 package demo;
 
 import org.apache.hadoop.conf.Configuration;

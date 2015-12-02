@@ -29,7 +29,7 @@ FreeMarker的模板文件并不比HTML页面复杂多少,FreeMarker模板文件�
 </body><br>
 </html>
 ```
-
+<!--more-->
 ## FTL指令规则
 在FreeMarker中,使用FTL标签来使用指令,FreeMarker有3种FTL标签,这和HTML标签是完全类似的.
 1. 开始标签:`<#directivename parameter>`
@@ -105,7 +105,7 @@ MX:小数部分最大X位
 ```
 ${"我的文件保存在C:\\盘"}
 ${'我名字是\"annlee\"'}
-输出结果是: 
+输出结果是:
 我的文件保存在C:\盘
 我名字是"annlee"
 FreeMarker支持如下转义字符:
@@ -346,7 +346,7 @@ FreeMarker的FTL指令也是模板的重要组成部分,这些指令可实现对
 > 输出结果是:青年人
 
 上面的代码中的逻辑表达式用括号括起来主要是因为里面有>符号,由于FreeMarker会将>符号当成标签的结束字符,可能导致程序出错,为了避免这种情况,我们应该在凡是出现这些符号的地方都使用括号.    
-### switch , case , default , break指令 
+### switch , case , default , break指令
 这些指令显然是分支指令,作用类似于Java的switch语句,switch指令的语法结构如下:  
 ```
 <#switch value>
@@ -441,7 +441,7 @@ ${itemCodeToNameMap[itemCode2]?html}
 ${itemCodeToNameMap[itemCode3]?html}
 ${itemCodeToNameMap[itemCode4]?html}
 ```
-对于放在escape指令中所有的插值而言,这此插值将被自动加上escape表达式,如果需要指定escape指令中某些插值无需添加escape表达式,则应该使用noescape指令,放在noescape指令中的插值将不会添加escape表达式. 
+对于放在escape指令中所有的插值而言,这此插值将被自动加上escape表达式,如果需要指定escape指令中某些插值无需添加escape表达式,则应该使用noescape指令,放在noescape指令中的插值将不会添加escape表达式.
 ### assign指令
 assign指令在前面已经使用了多次,它用于为该模板页面创建或替换一个顶层变量,assign指令的用法有多种,包含创建或替换一个顶层变量,或者创建或替换多个变量等,它的最简单的语法如下:  
 `<#assign name=value [in namespacehash]>`  
@@ -561,20 +561,20 @@ j2ee
 ```
 上面的代码输出:spring,而j2ee位于return指令之后,不会输出.
 ```java
-if, else, elseif 
+if, else, elseif
 switch, case, default, break
-list, break 
-include 
-Import 
-compress 
-escape, noescape 
-assign 
-global 
-setting 
+list, break
+include
+Import
+compress
+escape, noescape
+assign
+global
+setting
 macro, nested, return
-t, lt, rt 
+t, lt, rt
 ```
-                                  
+
 ## 概念
 最常用的3个概念  
 - sequence  序列，对应java里的list、数组等非键值对的集合
@@ -625,7 +625,7 @@ hash      键值对的集合
 </#switch>
 ```
 **用例**
-** 字符串 ** 
+** 字符串 **
 ```
 <#switch being.size>
   <#case "small">
@@ -700,7 +700,7 @@ All rights reserved.
 <h1>Some test</h1>
 <p>Yeah.
 <hr>
-<#include "/common/copyright.ftl" encoding=”GBK”> 
+<#include "/common/copyright.ftl" encoding=”GBK”>
 ```
 ```
 输出结果
@@ -708,7 +708,7 @@ All rights reserved.
 <p>Yeah.
 <hr>
 Copyright 2001-2002 Juila Smith
-All rights reserved. 
+All rights reserved.
 ```
 #### Import
 语法
@@ -743,7 +743,7 @@ All rights reserved.
 (1 2 3 4 5
 moo
 test only
-I said, test only) 
+I said, test only)
 ```
 #### escape, noescape
 语法
@@ -856,7 +856,7 @@ ${1.2}
 1.2
 ```
 因为匈牙利是采用“,”作为十进制的分隔符，美国是用“.”
- 
+
 #### macro, nested, return
 语法
 ```
@@ -876,7 +876,7 @@ ${1.2}
 <@test foo="a" bar="b" baaz=5*5-2/>
 <@test foo="a" bar="b"/>
 <@test foo="a" baaz=5*5-2/>
-<@test foo="a"/> 
+<@test foo="a"/>
 ```
 输出
 ```
@@ -915,7 +915,7 @@ ${1.2}
 </#macro>
 <@repeat count=4 ; c halfc last>
   ${c}. ${halfc}<#if last> Last!</#if>
-</@repeat > 
+</@repeat >
 ```
 输出
 ```
@@ -923,7 +923,7 @@ ${1.2}
   2. 1
   3. 1.5
   4. 2 Last!
-``` 
+```
 
 #### t, lt, rt
 语法
@@ -963,7 +963,7 @@ ${var?default(“hello world<br>”)?html}如果var is null那么将会被hello 
 在代码里的实现
 ```
 cfg = Configuration.getDefaultConfiguration();
-cfg.setSharedVariable("global", "you good"); 
+cfg.setSharedVariable("global", "you good");
 ```
 页面实现可以通过global指令,具体查看指令里的global部分  
 直接调用java对象的方法  
@@ -982,7 +982,7 @@ ${user[1..4]}
 ho
 ello  
 ```
-#### 类似String.split的用法 
+#### 类似String.split的用法
  “abc;def;ghi”?split(“;”)返回sequence  
 将字符串按空格转化成sequence,然后取sequence的长度  
  var?word_list  效果同 var?split(“ ”)   
@@ -1010,13 +1010,13 @@ var?capitalize
 j_string: 在字符串引号前加”\”  
 
 ```
-<#assign beanName = 'The "foo" bean.'> 
+<#assign beanName = 'The "foo" bean.'>
 String BEAN_NAME = "${beanName?j_string}";
 ```
- 
+
 打印输出:  
 
-``` 
+```
 String BEAN_NAME = "The \"foo\" bean.";
 js_string:
  <#assign user = "Big Joe's \"right hand\".">
@@ -1039,7 +1039,7 @@ ${s?replace(‘ba’, ‘XY’ , ‘规则参数’)}将s里的所有的ba替换
 在模板里对sequences和hashes初始化  
 ```
 sequences   
-1. [“you”,”me”,”he”] 
+1. [“you”,”me”,”he”]
 2. 1..100
 3. [ {“Akey”:”Avalue”},{“Akey1”:”Avalue1”},
 {“Bkey”:”Bvalue”},{“Bkey1”:”Bvalue1”},
@@ -1049,8 +1049,8 @@ hashes      {“you”:”a”,”me”:”b”,”he”:”c”}
 ```
 注释标志
 ```
-<#-- 
-这里是注释 
+<#--
+这里是注释
 -->
 ```
 旧版本的freemarker采用的是<#comment> 注释 </#comment>方法
@@ -1089,22 +1089,22 @@ ${JspTaglibs ["a"]}
 在view中存在下面的对象  
 我们可以在ftl中${req}来打印req对象  
 ```
-· req - the current HttpServletRequest 
-· res - the current HttpServletResponse 
-· stack - the current OgnlValueStack 
-· ognl - the OgnlTool instance 
-· webwork - an instance of FreemarkerWebWorkUtil 
-· action - the current WebWork action 
-· exception - optional the Exception instance, if the view is a JSP exception or Servlet exception view 
+· req - the current HttpServletRequest
+· res - the current HttpServletResponse
+· stack - the current OgnlValueStack
+· ognl - the OgnlTool instance
+· webwork - an instance of FreemarkerWebWorkUtil
+· action - the current WebWork action
+· exception - optional the Exception instance, if the view is a JSP exception or Servlet exception view
 ```
 view中值的搜索顺序  
 ${name}将会以下面的顺序查找name值  
 ```
-· freemarker variables 
-· value stack 
-· request attributes 
-· session attributes 
-· servlet context attributes 
+· freemarker variables
+· value stack
+· request attributes
+· session attributes
+· servlet context attributes
 ```
 在模板里ftl里使用标签
 注意，如果标签的属性值是数字，那么必须采用nubmer=123方式给属性赋值
@@ -1123,7 +1123,7 @@ JSP页面
       <html:submit value="Send"/>
     </html:form>
   </body>
-</html> 
+</html>
 ```
 模板ftl页面
 ```html
@@ -1139,7 +1139,7 @@ JSP页面
       <@html.submit value="Send"/>
     </@html.form >
   </body>
-</html> 
+</html>
 ```
 如何初始化共享变量  
 1． 初始化全局共享数据模型  
@@ -1197,7 +1197,7 @@ ${timer("yyyy-MM-dd ", x)}
 在模板中除了可以通过对象来调用方法外（${object.methed(args)}）也可以直接调用java实现的方法，java类必须实现接口TemplateMethodModel的方法exec(List args). 下面以把毫秒的时间转换成按格式输出的时间为例子
 ```java
 public class LongToDate implements TemplateMethodModel {
-    
+
 public TemplateModel exec(List args) throws TemplateModelException {
 SimpleDateFormat mydate = new SimpleDateFormat((String) args.get(0)));
         return mydate.format(new Date(Long.parseLong((String)args.get(1)));
@@ -1230,9 +1230,9 @@ class UpperCaseTransform implements TemplateTransformModel {
         return new UpperCaseWriter(out);
     }
     private class UpperCaseWriter extends Writer {
-       
+
         private Writer out;
-           
+
         UpperCaseWriter (Writer out) {
             this.out = out;
         }

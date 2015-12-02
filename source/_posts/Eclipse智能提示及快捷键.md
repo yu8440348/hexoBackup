@@ -11,7 +11,7 @@ date: 2015-01-09 09:50:00
 (2). 在目录树上选择"Java－Editor－Content Assist"，在右侧的"Auto-Activation"找到"Auto Activation triggers for java"选项。默认触发代码提示的就是"."这个符号。
 
 (3). 在"Auto Activation triggers for java"选项中，将"."更改：.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
-
+<!--more-->
 ## XML智能提示
 (1). 打开Eclipse，选择打开" Window － Preferences"。
 
