@@ -123,6 +123,7 @@ SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 下载apache-hive-0.14.0-src.tar.gz的源码包并解压  
 解压后进入hwi子目录，该目录下的web文件夹正是war包的全部文件，我们需要做的就是通过jar命令把这个文件夹打包为war文件。  
 在hwi目录下执行
+
 ```bash
 jar cvfM0 hive-hwi-0.14.0.war -C web/ .
 ```
