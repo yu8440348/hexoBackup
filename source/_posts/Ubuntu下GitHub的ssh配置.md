@@ -8,7 +8,7 @@ date: 2015-01-05 17:02:00
 git是分布式的代码管理工具，远程的代码管理是基于ssh的，所以要使用远程的git则需要ssh的配置。
 github的ssh配置如下：  
 ###一 、设置git的user name和email：
-```
+```bash
 $ git config --global user.name "yu8440348"
 $ git config --global user.email "yu8440348@163.com"
 ```
