@@ -13,7 +13,9 @@ date: 2016-08-17 14:38:00
 
 > 若是Windows系统将sigar-amd64-winnt.dll复制到JDK安装目录的bin目录中。 
 
-#### 将dzen后台相关文件上传到服务器中，文件列表如下
+#### 将dzen后台文件上传到服务器中，
+
+**文件列表如下**
 
 ```
 lib --此目录主要包含dzen依赖的jar文件
@@ -71,8 +73,8 @@ sh dzen.sh stop
 ```
 
 ### DZENweb端程序部署
+> 由于使用了websocket技术，请使用tomcat7.0.69以上版本
 > 将war包上传到tomcat中，修改以下配置文件
-
 **config.properties配置文件中的BROKER_URL**
 
 ```
