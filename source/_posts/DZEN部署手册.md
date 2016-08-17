@@ -75,6 +75,7 @@ sh dzen.sh stop
 ### DZENweb端程序部署
 > 由于使用了websocket技术，请使用tomcat7.0.69以上版本
 > 将war包上传到tomcat中，修改以下配置文件
+
 **config.properties配置文件中的BROKER_URL**
 
 ```
@@ -97,3 +98,4 @@ hibernate.format_sql=true
 hibernate.hbm2ddl.auto=none
 ```
 #### 启动tomcat
+
