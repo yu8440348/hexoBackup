@@ -1,6 +1,7 @@
 title: Eclipse安装Freemarker插件
 tags:
-- Java开发  categories: []  date: 2015-01-08 20:27:00---
+- Java开发
+categories: []date: 2015-01-08 20:27:00---
 步骤
 1. Help -> Software updates -> Find and install。
 2. New Remote Site 
@@ -11,3 +12,4 @@ tags:
 8. eneral –> Editors –> File Associations下
 9. 为*.html和*.htm文件添加（add）FreeMarker Editor 作他们关联的编辑器（associated editors)。
 10. 这样在编辑混合有HTML和FreeMarker标记的文件时，可以选择右击文件 –> Open with HTML Editor 或者 Open with FreeMarker Editor。
+
